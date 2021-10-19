@@ -18,9 +18,11 @@
             <div class="header-wrapper">
                 <a href="/" class="header__logo"><img src="img/logo-stone-design.webp" alt="Stone Desing"></a>
                 <ul class="header__contact">
-                    <li><a href="tel:+380675336866">(067) 533-68-66</a></li>
-                    <li><a href="mailto:sd_@ukr.net">sd_@ukr.net</a></li>
+                    <li class="header__contact--phone"><a href="tel:+380675336866">(067) 533-68-66</a></li>
+                    <li class="header__contact--email"><a href="mailto:sd_@ukr.net">sd_@ukr.net</a></li>
+                    <li class="header__contact--request-call"><a href="#request-call" data-fancybox><svg><use xlink:href="img/svg/sprite.svg#phone"></use></svg> Заказать звонок</a></li>
                 </ul>
+                
                 <div class="header__collapse">
                     <span></span>
                 </div>
@@ -71,6 +73,27 @@
                 <li><a href="tel:+380674050845">(067) 405-08-45</a></li>
             </ul>
         </div>
+        <div class="page__form">
+            <h1>Форма обратной связи</h1>
+            <form action="" class="form-page">
+                <div class="form-page__input">
+                    <label for="fname"><input name="fname" type="text" placeholder="Имя:"></label>
+                    <label for="lname"><input name="lname" type="text" placeholder="Фамилия:"></label>
+                    <label for="mail"><input name="mail" type="email" placeholder="Email:"></label>
+                    <label for="phone"><input name="phone" type="tel" placeholder="Телефон:"></label>
+                </div>
+                <div class="form-page__textarea">
+                    <label for="message"><textarea name="message" id="" cols="30" rows="10" placeholder="Сообщение..."></textarea></label>
+                </div>
+                <div class="form-page__btn">
+                    <button class="btn" type="submit">Отправить сообщение</button>
+                </div>
+                <div class="modal-success">
+                    <svg><use xlink:href="img/svg/sprite.svg#check"></use></svg>
+                    <div class="modal-success__text">Сообзение отправлено!</div>
+                </div> 
+            </form>
+        </div>
     </div>
 </div>
 
@@ -106,6 +129,24 @@
     </div>
 </footer>
 
+<div id="request-call" class="modal">
+    <div class="modal-wrapper">
+        <form action="" class="form-modal">
+            <h2>Заказать звонок</h2>
+            <ul>
+                <li><svg><use xlink:href="img/svg/sprite.svg#phone"></use></svg><a href="tel:+380976000909">(097) 600-09-09</a></li>
+                <li><svg><use xlink:href="img/svg/sprite.svg#phone"></use></svg><a href="tel:+380976000909">(097) 600-09-09</a></li>
+            </ul>
+            <label for=""><input type="text" placeholder="Имя"></label>
+            <label for=""><input type="tel" placeholder="Номер телефона"></label>
+            <label for=""><input type="submit" value="Отправить"></label>
+        </form>
+        <div class="modal-success">
+            <svg><use xlink:href="img/svg/sprite.svg#check"></use></svg>
+            <div class="modal-success__text">Сообзение отправлено!</div>
+        </div> 
+    </div>
+</div>
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!--Swiper-->
